@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B466B8A8C9EC300716A3FD /* libPods-HFOxygen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB37DF3A0D4C56AF69985D /* libPods-HFOxygen.a */; };
 		B82DCD4920CB92E1008F1D75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DCD4820CB92E1008F1D75 /* AppDelegate.m */; };
 		B82DCD4C20CB92E1008F1D75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DCD4B20CB92E1008F1D75 /* ViewController.m */; };
 		B82DCD4F20CB92E1008F1D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82DCD4D20CB92E1008F1D75 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		B82DCD5320CB92E3008F1D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82DCD5520CB92E3008F1D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82DCD5620CB92E3008F1D75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDAB37DF3A0D4C56AF69985D /* libPods-HFOxygen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HFOxygen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C6B2F7D2A4489DDD8A82C0 /* Pods-HFOxygen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFOxygen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFOxygen/Pods-HFOxygen.debug.xcconfig"; sourceTree = "<group>"; };
+		F15322B39371F0E5B95C23BA /* Pods-HFOxygen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFOxygen.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFOxygen/Pods-HFOxygen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B466B8A8C9EC300716A3FD /* libPods-HFOxygen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62EAF81181C06F39C2E607A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB37DF3A0D4C56AF69985D /* libPods-HFOxygen.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89411FB3686DBEA2287FEA3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0C6B2F7D2A4489DDD8A82C0 /* Pods-HFOxygen.debug.xcconfig */,
+				F15322B39371F0E5B95C23BA /* Pods-HFOxygen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B82DCD3B20CB92E1008F1D75 = {
 			isa = PBXGroup;
 			children = (
 				B82DCD4620CB92E1008F1D75 /* HFOxygen */,
 				B82DCD4520CB92E1008F1D75 /* Products */,
+				89411FB3686DBEA2287FEA3F /* Pods */,
+				62EAF81181C06F39C2E607A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B82DCD5A20CB92E3008F1D75 /* Build configuration list for PBXNativeTarget "HFOxygen" */;
 			buildPhases = (
+				6DB8CC80ED38B31A580AA78A /* [CP] Check Pods Manifest.lock */,
 				B82DCD4020CB92E1008F1D75 /* Sources */,
 				B82DCD4120CB92E1008F1D75 /* Frameworks */,
 				B82DCD4220CB92E1008F1D75 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DB8CC80ED38B31A580AA78A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HFOxygen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B82DCD4020CB92E1008F1D75 /* Sources */ = {
@@ -281,10 +327,12 @@
 		};
 		B82DCD5B20CB92E3008F1D75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C6B2F7D2A4489DDD8A82C0 /* Pods-HFOxygen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HFOxygen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +345,12 @@
 		};
 		B82DCD5C20CB92E3008F1D75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15322B39371F0E5B95C23BA /* Pods-HFOxygen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HFOxygen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
