@@ -1,0 +1,6 @@
+framework module Pods_HFOxygen {
+  umbrella header "Pods-HFOxygen-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IncomeSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="医院吊牌" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-gU-kTk">
+                    <rect key="frame" x="15" y="15.5" width="20" height="20"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日收入汇总" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewI-qT-lQu">
+                    <rect key="frame" x="45" y="0.0" width="98" height="50"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n54-15-MFL">
+                    <rect key="frame" x="332" y="0.0" width="33" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="刷新">
+                        <color key="titleColor" red="0.28151630309999998" green="0.76453517719999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kdB-cc-XsJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ewI-qT-lQu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="217-DD-sw5"/>
+                <constraint firstItem="8bv-gU-kTk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="250-jq-n6y"/>
+                <constraint firstItem="8bv-gU-kTk" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="509-Rh-BQF"/>
+                <constraint firstItem="n54-15-MFL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5tw-z2-dob"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n54-15-MFL" secondAttribute="bottom" id="Mgi-gr-UU4"/>
+                <constraint firstAttribute="trailing" secondItem="n54-15-MFL" secondAttribute="trailing" constant="10" id="Xi7-po-6Fu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ewI-qT-lQu" secondAttribute="bottom" id="evP-DH-MMc"/>
+                <constraint firstItem="ewI-qT-lQu" firstAttribute="leading" secondItem="8bv-gU-kTk" secondAttribute="trailing" constant="10" id="tRQ-Yo-hcD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="refreshBtn" destination="n54-15-MFL" id="8sd-WR-2cH"/>
+                <outlet property="titleLabel" destination="ewI-qT-lQu" id="b4j-c3-rTc"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="医院吊牌" width="20" height="20"/>
+    </resources>
+</document>

@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46B466B8A8C9EC300716A3FD /* libPods-HFOxygen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB37DF3A0D4C56AF69985D /* libPods-HFOxygen.a */; };
+		2E39CF5233E45C8EE34B8BCE /* Pods_HFOxygen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33654323CAD2B957F16C30E /* Pods_HFOxygen.framework */; };
 		B82DCD4920CB92E1008F1D75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DCD4820CB92E1008F1D75 /* AppDelegate.m */; };
 		B82DCD4C20CB92E1008F1D75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DCD4B20CB92E1008F1D75 /* ViewController.m */; };
 		B82DCD4F20CB92E1008F1D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82DCD4D20CB92E1008F1D75 /* Main.storyboard */; };
 		B82DCD5120CB92E3008F1D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82DCD5020CB92E3008F1D75 /* Assets.xcassets */; };
 		B82DCD5420CB92E3008F1D75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82DCD5220CB92E3008F1D75 /* LaunchScreen.storyboard */; };
 		B82DCD5720CB92E3008F1D75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DCD5620CB92E3008F1D75 /* main.m */; };
+		B88FC4A6212128280001920A /* IncomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC49E212128280001920A /* IncomeController.m */; };
+		B88FC4A7212128280001920A /* IncomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC49F212128280001920A /* IncomeController.xib */; };
+		B88FC4A8212128280001920A /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4A3212128280001920A /* LoginController.m */; };
+		B88FC4A9212128280001920A /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4A4212128280001920A /* LoginController.xib */; };
+		B88FC4AC2121285D0001920A /* IncomeSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4AB2121285D0001920A /* IncomeSectionView.m */; };
+		B88FC4AE212128670001920A /* IncomeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4AD212128670001920A /* IncomeSectionView.xib */; };
+		B88FC4B1212131270001920A /* DayIncomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4B0212131270001920A /* DayIncomeView.m */; };
+		B88FC4B3212131310001920A /* DayIncomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4B2212131310001920A /* DayIncomeView.xib */; };
+		B88FC4B6212137660001920A /* DayNumView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4B5212137660001920A /* DayNumView.m */; };
+		B88FC4B82121376F0001920A /* DayNumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4B72121376F0001920A /* DayNumView.xib */; };
+		B88FC4BB2121445C0001920A /* HistoryIncomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4BA2121445C0001920A /* HistoryIncomeView.m */; };
+		B88FC4BD212144670001920A /* HistoryIncomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4BC212144670001920A /* HistoryIncomeView.xib */; };
+		B88FC4C02121493E0001920A /* HistoryInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4BF2121493E0001920A /* HistoryInputView.m */; };
+		B88FC4C2212149470001920A /* HistoryInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4C1212149470001920A /* HistoryInputView.xib */; };
+		B88FC4C521214DF10001920A /* HistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4C421214DF10001920A /* HistoryView.m */; };
+		B88FC4C821215BF00001920A /* LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4C721215BF00001920A /* LineChartView.m */; };
+		B88FC4CC21216C0D0001920A /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4CB21216C0D0001920A /* SocketManager.m */; };
+		B88FC4D021217B3B0001920A /* MBProgressHUD+YJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FC4CF21217B3B0001920A /* MBProgressHUD+YJ.m */; };
+		B88FC4D221217B540001920A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B88FC4D121217B540001920A /* MBProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +46,37 @@
 		B82DCD5320CB92E3008F1D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82DCD5520CB92E3008F1D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82DCD5620CB92E3008F1D75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDAB37DF3A0D4C56AF69985D /* libPods-HFOxygen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HFOxygen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88FC49E212128280001920A /* IncomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeController.m; sourceTree = "<group>"; };
+		B88FC49F212128280001920A /* IncomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncomeController.xib; sourceTree = "<group>"; };
+		B88FC4A0212128280001920A /* IncomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeController.h; sourceTree = "<group>"; };
+		B88FC4A3212128280001920A /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		B88FC4A4212128280001920A /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		B88FC4A5212128280001920A /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		B88FC4AA2121285D0001920A /* IncomeSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncomeSectionView.h; sourceTree = "<group>"; };
+		B88FC4AB2121285D0001920A /* IncomeSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncomeSectionView.m; sourceTree = "<group>"; };
+		B88FC4AD212128670001920A /* IncomeSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncomeSectionView.xib; sourceTree = "<group>"; };
+		B88FC4AF212131270001920A /* DayIncomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayIncomeView.h; sourceTree = "<group>"; };
+		B88FC4B0212131270001920A /* DayIncomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayIncomeView.m; sourceTree = "<group>"; };
+		B88FC4B2212131310001920A /* DayIncomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayIncomeView.xib; sourceTree = "<group>"; };
+		B88FC4B4212137660001920A /* DayNumView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayNumView.h; sourceTree = "<group>"; };
+		B88FC4B5212137660001920A /* DayNumView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayNumView.m; sourceTree = "<group>"; };
+		B88FC4B72121376F0001920A /* DayNumView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayNumView.xib; sourceTree = "<group>"; };
+		B88FC4B92121445C0001920A /* HistoryIncomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryIncomeView.h; sourceTree = "<group>"; };
+		B88FC4BA2121445C0001920A /* HistoryIncomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryIncomeView.m; sourceTree = "<group>"; };
+		B88FC4BC212144670001920A /* HistoryIncomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryIncomeView.xib; sourceTree = "<group>"; };
+		B88FC4BE2121493E0001920A /* HistoryInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryInputView.h; sourceTree = "<group>"; };
+		B88FC4BF2121493E0001920A /* HistoryInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryInputView.m; sourceTree = "<group>"; };
+		B88FC4C1212149470001920A /* HistoryInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryInputView.xib; sourceTree = "<group>"; };
+		B88FC4C321214DF10001920A /* HistoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryView.h; sourceTree = "<group>"; };
+		B88FC4C421214DF10001920A /* HistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryView.m; sourceTree = "<group>"; };
+		B88FC4C621215BF00001920A /* LineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineChartView.h; sourceTree = "<group>"; };
+		B88FC4C721215BF00001920A /* LineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChartView.m; sourceTree = "<group>"; };
+		B88FC4CA21216C0D0001920A /* SocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		B88FC4CB21216C0D0001920A /* SocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
+		B88FC4CE21217B3B0001920A /* MBProgressHUD+YJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YJ.h"; sourceTree = "<group>"; };
+		B88FC4CF21217B3B0001920A /* MBProgressHUD+YJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YJ.m"; sourceTree = "<group>"; };
+		B88FC4D121217B540001920A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		E33654323CAD2B957F16C30E /* Pods_HFOxygen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFOxygen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C6B2F7D2A4489DDD8A82C0 /* Pods-HFOxygen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFOxygen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFOxygen/Pods-HFOxygen.debug.xcconfig"; sourceTree = "<group>"; };
 		F15322B39371F0E5B95C23BA /* Pods-HFOxygen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFOxygen.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFOxygen/Pods-HFOxygen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B466B8A8C9EC300716A3FD /* libPods-HFOxygen.a in Frameworks */,
+				2E39CF5233E45C8EE34B8BCE /* Pods_HFOxygen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +96,7 @@
 		62EAF81181C06F39C2E607A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDAB37DF3A0D4C56AF69985D /* libPods-HFOxygen.a */,
+				E33654323CAD2B957F16C30E /* Pods_HFOxygen.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +135,10 @@
 				B82DCD4820CB92E1008F1D75 /* AppDelegate.m */,
 				B82DCD4A20CB92E1008F1D75 /* ViewController.h */,
 				B82DCD4B20CB92E1008F1D75 /* ViewController.m */,
+				B88FC4C921216BF20001920A /* SocketManager */,
+				B88FC4A2212128280001920A /* Login */,
+				B88FC49C212128280001920A /* Income */,
+				B88FC4CD21217AC00001920A /* Extension */,
 				B82DCD4D20CB92E1008F1D75 /* Main.storyboard */,
 				B82DCD5020CB92E3008F1D75 /* Assets.xcassets */,
 				B82DCD5220CB92E3008F1D75 /* LaunchScreen.storyboard */,
@@ -93,6 +146,80 @@
 				B82DCD5620CB92E3008F1D75 /* main.m */,
 			);
 			path = HFOxygen;
+			sourceTree = "<group>";
+		};
+		B88FC49C212128280001920A /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				B88FC49D212128280001920A /* Controller */,
+				B88FC4A1212128280001920A /* View */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		B88FC49D212128280001920A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B88FC4A0212128280001920A /* IncomeController.h */,
+				B88FC49E212128280001920A /* IncomeController.m */,
+				B88FC49F212128280001920A /* IncomeController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B88FC4A1212128280001920A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B88FC4C621215BF00001920A /* LineChartView.h */,
+				B88FC4C721215BF00001920A /* LineChartView.m */,
+				B88FC4C321214DF10001920A /* HistoryView.h */,
+				B88FC4C421214DF10001920A /* HistoryView.m */,
+				B88FC4BE2121493E0001920A /* HistoryInputView.h */,
+				B88FC4BF2121493E0001920A /* HistoryInputView.m */,
+				B88FC4C1212149470001920A /* HistoryInputView.xib */,
+				B88FC4B92121445C0001920A /* HistoryIncomeView.h */,
+				B88FC4BA2121445C0001920A /* HistoryIncomeView.m */,
+				B88FC4BC212144670001920A /* HistoryIncomeView.xib */,
+				B88FC4AA2121285D0001920A /* IncomeSectionView.h */,
+				B88FC4AB2121285D0001920A /* IncomeSectionView.m */,
+				B88FC4AD212128670001920A /* IncomeSectionView.xib */,
+				B88FC4AF212131270001920A /* DayIncomeView.h */,
+				B88FC4B0212131270001920A /* DayIncomeView.m */,
+				B88FC4B2212131310001920A /* DayIncomeView.xib */,
+				B88FC4B4212137660001920A /* DayNumView.h */,
+				B88FC4B5212137660001920A /* DayNumView.m */,
+				B88FC4B72121376F0001920A /* DayNumView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B88FC4A2212128280001920A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B88FC4A5212128280001920A /* LoginController.h */,
+				B88FC4A3212128280001920A /* LoginController.m */,
+				B88FC4A4212128280001920A /* LoginController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B88FC4C921216BF20001920A /* SocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				B88FC4CA21216C0D0001920A /* SocketManager.h */,
+				B88FC4CB21216C0D0001920A /* SocketManager.m */,
+			);
+			path = SocketManager;
+			sourceTree = "<group>";
+		};
+		B88FC4CD21217AC00001920A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B88FC4CE21217B3B0001920A /* MBProgressHUD+YJ.h */,
+				B88FC4CF21217B3B0001920A /* MBProgressHUD+YJ.m */,
+				B88FC4D121217B540001920A /* MBProgressHUD.bundle */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +233,7 @@
 				B82DCD4020CB92E1008F1D75 /* Sources */,
 				B82DCD4120CB92E1008F1D75 /* Frameworks */,
 				B82DCD4220CB92E1008F1D75 /* Resources */,
+				D14B20E0E40020F7BA07C261 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,9 +281,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88FC4B82121376F0001920A /* DayNumView.xib in Resources */,
+				B88FC4A7212128280001920A /* IncomeController.xib in Resources */,
+				B88FC4BD212144670001920A /* HistoryIncomeView.xib in Resources */,
+				B88FC4D221217B540001920A /* MBProgressHUD.bundle in Resources */,
+				B88FC4AE212128670001920A /* IncomeSectionView.xib in Resources */,
 				B82DCD5420CB92E3008F1D75 /* LaunchScreen.storyboard in Resources */,
 				B82DCD5120CB92E3008F1D75 /* Assets.xcassets in Resources */,
+				B88FC4C2212149470001920A /* HistoryInputView.xib in Resources */,
+				B88FC4A9212128280001920A /* LoginController.xib in Resources */,
 				B82DCD4F20CB92E1008F1D75 /* Main.storyboard in Resources */,
+				B88FC4B3212131310001920A /* DayIncomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +316,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D14B20E0E40020F7BA07C261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HFOxygen/Pods-HFOxygen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
+				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFOxygen/Pods-HFOxygen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -187,9 +349,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88FC4C02121493E0001920A /* HistoryInputView.m in Sources */,
+				B88FC4BB2121445C0001920A /* HistoryIncomeView.m in Sources */,
+				B88FC4B6212137660001920A /* DayNumView.m in Sources */,
+				B88FC4A8212128280001920A /* LoginController.m in Sources */,
+				B88FC4B1212131270001920A /* DayIncomeView.m in Sources */,
+				B88FC4AC2121285D0001920A /* IncomeSectionView.m in Sources */,
+				B88FC4C521214DF10001920A /* HistoryView.m in Sources */,
+				B88FC4A6212128280001920A /* IncomeController.m in Sources */,
+				B88FC4D021217B3B0001920A /* MBProgressHUD+YJ.m in Sources */,
 				B82DCD4C20CB92E1008F1D75 /* ViewController.m in Sources */,
 				B82DCD5720CB92E3008F1D75 /* main.m in Sources */,
 				B82DCD4920CB92E1008F1D75 /* AppDelegate.m in Sources */,
+				B88FC4C821215BF00001920A /* LineChartView.m in Sources */,
+				B88FC4CC21216C0D0001920A /* SocketManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

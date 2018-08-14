@@ -9,12 +9,19 @@
 #import "ViewController.h"
 #import "GCDAsyncSocket.h"
 
-static NSString * const hostIP = @"a.socket.nat123.net";//@"192.168.3.18";
-static const NSInteger hostPort = 13300;
+static NSString * const hostIP = @"60.191.60.78";
+//@"a.socket.nat123.net"
+//@"192.168.3.18"
+//@"60.191.60.78"
+
+static const NSInteger hostPort = 3888;
+//13300
+
 /**
  The host parameter will be an IP address, not a DNS name. -- 引自GCDAsyncSocket
  连接的主机为IP地址,并非DNS名称.
  */
+
 @interface ViewController ()<GCDAsyncSocketDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *inputTF;
