@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "GCDAsyncSocket.h"
 
+//static NSString * const hostIP = @"60.191.60.78";
+//static const NSInteger hostPort = 3888;
+
 static NSString * const hostIP = @"60.191.60.78";
 //@"a.socket.nat123.net"
 //@"192.168.3.18"

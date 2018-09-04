@@ -7,6 +7,7 @@
 //
 
 #import "HistoryView.h"
+#import "UIView+Extension.h"
 
 @interface HistoryView ()
 
@@ -34,6 +35,8 @@
         CGRect incomeRect = self.historyIncomeView.frame;
         incomeRect.origin.y = CGRectGetMaxY(sepView.frame);
         self.historyIncomeView.frame = incomeRect;
+        
+        self.height = [self historyHeight];
     }
     return self;
 }

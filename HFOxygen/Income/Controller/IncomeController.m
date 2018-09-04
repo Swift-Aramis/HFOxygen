@@ -48,7 +48,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+
     if (indexPath.section == 0) {
         [cell.contentView addSubview:self.todayIncomeView];
     } else if (indexPath.section == 1) {
@@ -60,7 +60,6 @@
     } else {
         [cell.contentView addSubview:self.lineChartView];
     }
-    
     
     return cell;
 }

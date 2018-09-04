@@ -7,6 +7,8 @@
 //
 
 #import "HistoryInputView.h"
+#import "HMDatePicker.h"
+#import "MBProgressHUD+YJ.h"
 
 @interface HistoryInputView ()
 
@@ -14,7 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
 @property (weak, nonatomic) IBOutlet UIButton *endBtn;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
-
+@property (nonatomic, copy) NSString *startTime;
+@property (nonatomic, copy) NSString *endTime;
 @end
 
 @implementation HistoryInputView
@@ -33,7 +36,33 @@
     return self;
 }
 
+- (IBAction)startTimeBtnClicked:(UIButton *)sender {
+    HMDatePicker * datePicker = [[HMDatePicker alloc]initWithTitle:@"请选择开始时间" completion:^(NSString *dateString) {
+        [self.startBtn setTitle:dateString forState:UIControlStateNormal];
+        [self.startBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        self.startTime = dateString;
+    }];
+    [datePicker show];
+}
+
+- (IBAction)endTimeBtnClicked:(UIButton *)sender {
+    HMDatePicker * datePicker = [[HMDatePicker alloc]initWithTitle:@"请选择结束时间" completion:^(NSString *dateString) {
+        [self.endBtn setTitle:dateString forState:UIControlStateNormal];
+        [self.endBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        self.endTime = dateString;
+    }];
+    [datePicker show];
+}
+
 - (IBAction)sureAction:(UIButton *)sender {
+    if (_startTime.length == 0 ||
+        _endTime.length == 0) {
+        [MBProgressHUD showText:@"请先选择起止时间!"];
+        return;
+    }
+    if (self.block) {
+        self.block(_startTime, _endTime);
+    }
 }
 
 @end

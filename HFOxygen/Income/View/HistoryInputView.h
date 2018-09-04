@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^FormTimeBlock)(NSString *startTime, NSString *endTime);
+
 @interface HistoryInputView : UIView
+
+@property (nonatomic, copy) FormTimeBlock block;
 
 @end
